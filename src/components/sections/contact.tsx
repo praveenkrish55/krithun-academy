@@ -36,7 +36,7 @@ export function Contact() {
   return (
     <section id="contact" className="py-28 bg-[#FFFFFF] scroll-mt-10">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-        
+
         {/* Title */}
         <div className="text-center max-w-2xl mx-auto mb-20">
           <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#D09C34] mb-3">
@@ -64,7 +64,7 @@ export function Contact() {
                   <div>
                     <h4 className="font-heading font-bold text-[#0A1D3D] text-base uppercase tracking-wider">Academy Address</h4>
                     <p className="text-[#334155] text-sm mt-1.5 leading-relaxed font-semibold">
-                      2nd floor, Kovai towers, DR balasubramanium road, Coimbatore.
+                      2nd floor, Kovai towers, DR Balasubramanium road, Coimbatore.
                     </p>
                   </div>
                 </div>

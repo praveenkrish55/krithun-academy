@@ -8,6 +8,10 @@ export const NAVIGATION = [
     href: "/courses",
   },
   {
+    label: "AI Learning",
+    href: "/ai-learning",
+  },
+  {
     label: "Faculty",
     href: "/#faculty",
   },

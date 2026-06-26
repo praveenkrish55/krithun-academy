@@ -124,7 +124,7 @@ export function Footer() {
               <div className="pt-2 space-y-3.5 text-xs sm:text-sm text-slate-300 font-light">
                 <div className="flex items-start gap-2.5">
                   <MapPin size={16} className="text-[#D09C34] shrink-0 mt-0.5" />
-                  <span>2nd floor, Kovai towers, DR balasubramanium road, Coimbatore.</span>
+                  <span>2nd floor, Kovai towers, DR Balasubramanium road, Coimbatore.</span>
                 </div>
                 <div className="flex items-center gap-2.5">
                   <Phone size={16} className="text-[#D09C34] shrink-0" />
