@@ -6,17 +6,17 @@ import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { AdmissionModal } from "@/components/common/admission-modal";
 
-import { Hero } from "@/components/sections/hero";
-import { Statistics } from "@/components/sections/statistics";
-import { Courses } from "@/components/sections/courses";
-import { WhyChooseUs } from "@/components/sections/why-choose-us";
-import { About } from "@/components/sections/about";
-import { Faculty } from "@/components/sections/faculty";
-import { SuccessStories } from "@/components/sections/success-stories";
-import { Process } from "@/components/sections/process";
-import { FAQ } from "@/components/sections/faq";
-import { CTA } from "@/components/sections/cta";
-import { Contact } from "@/components/sections/contact";
+import { Hero } from "@/components/sections-sample/hero";
+import { Statistics } from "@/components/sections-sample/statistics";
+import { Courses } from "@/components/sections-sample/courses";
+import { WhyChooseUs } from "@/components/sections-sample/why-choose-us";
+import { About } from "@/components/sections-sample/about";
+import { Faculty } from "@/components/sections-sample/faculty";
+import { SuccessStories } from "@/components/sections-sample/success-stories";
+import { Process } from "@/components/sections-sample/process";
+import { FAQ } from "@/components/sections-sample/faq";
+import { CTA } from "@/components/sections-sample/cta";
+import { Contact } from "@/components/sections-sample/contact";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);

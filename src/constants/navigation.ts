@@ -1,26 +1,26 @@
 export const NAVIGATION = [
   {
     label: "Home",
-    href: "/",
+    href: "/#home",
   },
-
   {
     label: "Courses",
     href: "/courses",
   },
-
   {
     label: "Faculty",
-    href: "/faculty",
+    href: "/#faculty",
   },
-
   {
     label: "About",
-    href: "/about",
+    href: "/#about",
   },
-
+  {
+    label: "Success Stories",
+    href: "/#success-stories",
+  },
   {
     label: "Contact",
-    href: "/contact",
+    href: "/#contact",
   },
 ];
