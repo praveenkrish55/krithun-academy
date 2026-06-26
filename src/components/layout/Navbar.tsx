@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Menu, X, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Container } from "./container";
+import { Container } from "./Container";
 import { Logo } from "../common/logo";
 import { NAVIGATION } from "@/constants/navigation";
 import { AdmissionModal } from "../common/admission-modal";

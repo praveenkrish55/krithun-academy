@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Mail, Phone, MapPin, Send, ArrowRight } from "lucide-react";
 import { Facebook, Instagram, Linkedin, Youtube } from "@/components/common/social-icons";
-import { Container } from "./container";
+import { Container } from "./Container";
 import { Logo } from "../common/logo";
 import { NAVIGATION } from "@/constants/navigation";
 

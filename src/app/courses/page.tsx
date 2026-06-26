@@ -5,8 +5,8 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 import { TopBar } from "@/components/layout/top-bar";
-import { Navbar } from "@/components/layout/navbar";
-import { Footer } from "@/components/layout/footer";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
 import { AdmissionModal } from "@/components/common/admission-modal";
 
 import { CoursesList } from "@/components/sections/courses-list";
