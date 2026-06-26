@@ -1,4 +1,5 @@
 import { MapPin, Phone, Mail } from "lucide-react";
+import Link from "next/link";
 import { Facebook, Instagram, Linkedin, Youtube } from "@/components/common/social-icons";
 
 export function TopBar() {
@@ -26,6 +27,16 @@ export function TopBar() {
               info@krithunacademy.com
             </a>
           </div>
+
+          <div className="h-3 w-px bg-white/20" />
+
+          {/* Student Login Link */}
+          <Link
+            href="/portal"
+            className="hover:text-[#D09C34] hover:underline font-bold uppercase tracking-wider text-[9px]"
+          >
+            Student Portal
+          </Link>
 
           <div className="h-3 w-px bg-white/20" />
 

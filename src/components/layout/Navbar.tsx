@@ -68,7 +68,13 @@ export function Navbar() {
           </nav>
 
           {/* Desktop Right Action button */}
-          <div className="hidden lg:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-6">
+            <Link
+              href="/portal"
+              className="text-xs font-bold uppercase tracking-wider text-[#0A1D3D] hover:text-[#D09C34] transition-colors"
+            >
+              Student Portal
+            </Link>
             <Button
               onClick={() => setIsModalOpen(true)}
               className="bg-[#D09C34] hover:bg-[#0A1D3D] hover:scale-105 shimmer-gold text-white px-6 font-bold tracking-wider shadow-md h-11 transition-all duration-300 rounded uppercase text-[11px] inline-flex items-center gap-2"
@@ -109,6 +115,14 @@ export function Navbar() {
                     {item.label}
                   </Link>
                 ))}
+                {/* Mobile Student Portal */}
+                <Link
+                  href="/portal"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="text-sm font-semibold text-[#D09C34] hover:text-[#0A1D3D] transition-colors py-1.5 border-b border-slate-50 uppercase tracking-wider"
+                >
+                  Student Portal
+                </Link>
                 <div className="pt-2">
                   <Button
                     onClick={() => {
