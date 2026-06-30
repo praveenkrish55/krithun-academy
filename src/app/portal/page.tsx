@@ -568,6 +568,17 @@ export default function StudentPortal() {
                 </div>
               </div>
 
+              {/* Return to Website Home */}
+              <div className="text-center">
+                <Link
+                  href="/"
+                  className="inline-flex items-center gap-2 text-xs font-bold text-slate-400 hover:text-white uppercase tracking-wider transition-colors"
+                >
+                  <ArrowRight size={14} className="rotate-180 text-[#D09C34]" />
+                  <span>Return to Website Home</span>
+                </Link>
+              </div>
+
             </div>
           </motion.div>
         ) : (
@@ -648,8 +659,15 @@ export default function StudentPortal() {
                 </nav>
               </div>
 
-              {/* Sidebar Footer (Logout) */}
-              <div className="p-4 border-t border-white/5 shrink-0">
+              {/* Sidebar Footer (Home & Logout) */}
+              <div className="p-4 border-t border-white/5 shrink-0 space-y-2">
+                <Link
+                  href="/"
+                  className="w-full flex items-center justify-center gap-2 py-3 bg-white/5 hover:bg-white/10 text-white rounded-xl text-xs font-bold uppercase tracking-wider transition-all duration-300 border border-white/10"
+                >
+                  <ArrowRight size={16} className="rotate-180 text-[#D09C34]" />
+                  <span>Back to Home</span>
+                </Link>
                 <button
                   onClick={() => setIsLoggedIn(false)}
                   className="w-full flex items-center justify-center gap-2 py-3 bg-red-500/10 hover:bg-red-500 text-red-400 hover:text-white rounded-xl text-xs font-bold uppercase tracking-wider transition-all duration-300"

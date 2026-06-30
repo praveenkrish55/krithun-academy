@@ -43,7 +43,7 @@ export function FAQ() {
             Frequently Asked Questions
           </h2>
           <div className="h-1 w-16 bg-[#D09C34] mx-auto mt-4 rounded-full" />
-          <p className="text-[#334155] text-base sm:text-lg leading-relaxed mt-6 font-normal">
+          <p className="text-[#334155] text-sm sm:text-base leading-relaxed mt-6 font-normal">
             Have questions about batches or enrollments? Check our answers.
           </p>
         </div>
@@ -61,7 +61,7 @@ export function FAQ() {
                   onClick={() => setActiveFaq(isOpen ? null : idx)}
                   className="w-full px-6 py-5 flex justify-between items-center text-left bg-slate-50/50 hover:bg-slate-50 transition-colors focus:outline-none cursor-pointer"
                 >
-                  <span className="text-base sm:text-lg font-bold text-[#0A1D3D] tracking-wide">
+                  <span className="text-sm sm:text-base font-bold text-[#0A1D3D] tracking-wide">
                     {faq.q}
                   </span>
                   <ChevronDown
@@ -84,7 +84,7 @@ export function FAQ() {
                       }}
                       transition={{ duration: 0.3, ease: [0.04, 0.62, 0.23, 0.98] } as any}
                     >
-                      <div className="px-6 py-5 bg-white border-t border-slate-50 text-[#334155] text-sm sm:text-base leading-relaxed font-normal">
+                      <div className="px-6 py-5 bg-white border-t border-slate-50 text-[#334155] text-xs sm:text-sm leading-relaxed font-normal">
                         {faq.a}
                       </div>
                     </motion.div>
