@@ -179,7 +179,13 @@ export function Footer() {
           <div>
             © {new Date().getFullYear()} Krithun Academy. All Rights Reserved.
           </div>
-          <div className="flex gap-6">
+          <div className="flex gap-6 flex-wrap">
+            <Link href="/faculty" className="hover:text-white transition-colors uppercase tracking-wider font-bold text-[#D09C34]">
+              Faculty Portal
+            </Link>
+            <Link href="/admin" className="hover:text-white transition-colors uppercase tracking-wider font-bold text-[#D09C34]">
+              Admin Portal
+            </Link>
             <Link href="#privacy" className="hover:text-white transition-colors">
               Privacy Policy
             </Link>

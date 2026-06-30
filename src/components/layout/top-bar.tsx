@@ -40,6 +40,16 @@ export function TopBar() {
 
           <div className="h-3 w-px bg-white/20" />
 
+          {/* Faculty Login Link */}
+          <Link
+            href="/faculty"
+            className="hover:text-[#D09C34] hover:underline font-bold uppercase tracking-wider text-[9px]"
+          >
+            Faculty Portal
+          </Link>
+
+          <div className="h-3 w-px bg-white/20" />
+
           {/* Social Links */}
           <div className="flex items-center gap-3">
             <a

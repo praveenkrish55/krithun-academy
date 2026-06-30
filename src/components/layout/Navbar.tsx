@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X, ArrowRight } from "lucide-react";
+import { Menu, X, ArrowRight, GraduationCap, UserCheck } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Container } from "./Container";
@@ -68,13 +68,31 @@ export function Navbar() {
           </nav>
 
           {/* Desktop Right Action button */}
-          <div className="hidden lg:flex items-center gap-6">
+          <div className="hidden lg:flex items-center gap-4">
+            {/* Student Portal Icon Button */}
             <Link
               href="/portal"
-              className="text-xs font-bold uppercase tracking-wider text-[#0A1D3D] hover:text-[#D09C34] transition-colors"
+              className="w-10 h-10 rounded-full border border-slate-200 bg-slate-50 hover:bg-[#0A1D3D] text-[#0A1D3D] hover:text-[#D09C34] hover:border-[#0A1D3D] transition-all flex items-center justify-center shadow-sm relative group cursor-pointer"
+              title="Student Portal"
             >
-              Student Portal
+              <GraduationCap size={18} />
+              <span className="absolute top-full mt-2 left-1/2 -translate-x-1/2 bg-[#0A1D3D] text-white text-[10px] uppercase font-bold tracking-wider py-1.5 px-2.5 rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-1 group-hover:translate-y-0 whitespace-nowrap shadow-lg pointer-events-none z-50">
+                Student Portal
+              </span>
             </Link>
+
+            {/* Faculty Portal Icon Button */}
+            <Link
+              href="/faculty"
+              className="w-10 h-10 rounded-full border border-slate-200 bg-slate-50 hover:bg-[#0A1D3D] text-[#0A1D3D] hover:text-[#D09C34] hover:border-[#0A1D3D] transition-all flex items-center justify-center shadow-sm relative group cursor-pointer"
+              title="Faculty Portal"
+            >
+              <UserCheck size={18} />
+              <span className="absolute top-full mt-2 left-1/2 -translate-x-1/2 bg-[#0A1D3D] text-white text-[10px] uppercase font-bold tracking-wider py-1.5 px-2.5 rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-1 group-hover:translate-y-0 whitespace-nowrap shadow-lg pointer-events-none z-50">
+                Faculty Portal
+              </span>
+            </Link>
+
             <Button
               onClick={() => setIsModalOpen(true)}
               className="bg-[#D09C34] hover:bg-[#0A1D3D] hover:scale-105 shimmer-gold text-white px-6 font-bold tracking-wider shadow-md h-11 transition-all duration-300 rounded uppercase text-[11px] inline-flex items-center gap-2"
@@ -119,9 +137,19 @@ export function Navbar() {
                 <Link
                   href="/portal"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-sm font-semibold text-[#D09C34] hover:text-[#0A1D3D] transition-colors py-1.5 border-b border-slate-50 uppercase tracking-wider"
+                  className="flex items-center gap-2.5 text-sm font-semibold text-[#D09C34] hover:text-[#0A1D3D] transition-colors py-2 border-b border-slate-50 uppercase tracking-wider"
                 >
-                  Student Portal
+                  <GraduationCap size={18} className="text-[#D09C34]" />
+                  <span>Student Portal</span>
+                </Link>
+                {/* Mobile Faculty Portal */}
+                <Link
+                  href="/faculty"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="flex items-center gap-2.5 text-sm font-semibold text-[#D09C34] hover:text-[#0A1D3D] transition-colors py-2 border-b border-slate-50 uppercase tracking-wider"
+                >
+                  <UserCheck size={18} className="text-[#D09C34]" />
+                  <span>Faculty Portal</span>
                 </Link>
                 <div className="pt-2">
                   <Button

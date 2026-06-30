@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -53,6 +54,7 @@ export default function AILearningPage() {
       description: "24/7 instant chat resolving complex CA/CMA concepts with step-by-step guidance and reference linking.",
       icon: MessageSquareCode,
       badge: "Real-time AI",
+      href: "/ai-assistant",
     },
     {
       title: "AI Study Planner",
@@ -263,11 +265,21 @@ export default function AILearningPage() {
                     </div>
                   </div>
 
-                  {/* Bottom "Coming Soon" indicator */}
-                  <div className="text-slate-400 font-bold text-[9px] tracking-wider uppercase flex items-center gap-1.5 mt-6 self-start pt-2 border-t border-slate-50 w-full">
-                    <span className="h-1.5 w-1.5 rounded-full bg-[#D09C34] animate-pulse shrink-0" />
-                    <span>Development Phase</span>
-                  </div>
+                  {/* Bottom "Coming Soon" indicator or Interactive Demo Link */}
+                  {feature.href ? (
+                    <Link
+                      href={feature.href}
+                      className="text-[#D09C34] hover:text-[#0A1D3D] font-bold text-[10px] tracking-wider uppercase flex items-center gap-1.5 mt-6 self-start pt-2 border-t border-slate-50 w-full group/btn"
+                    >
+                      <span>Try Interactive Demo</span>
+                      <ArrowRight size={12} className="group-hover/btn:translate-x-1 transition-transform" />
+                    </Link>
+                  ) : (
+                    <div className="text-slate-400 font-bold text-[9px] tracking-wider uppercase flex items-center gap-1.5 mt-6 self-start pt-2 border-t border-slate-50 w-full">
+                      <span className="h-1.5 w-1.5 rounded-full bg-[#D09C34] animate-pulse shrink-0" />
+                      <span>Development Phase</span>
+                    </div>
+                  )}
                 </motion.div>
               ))}
             </motion.div>

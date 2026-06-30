@@ -1,0 +1,17 @@
+{
+  "name": "Krithun Academy AI Learning Platform",
+  "short_name": "Krithun AI",
+  "description": "Premium AI-powered commerce coaching for CA, CMA, and accounting certifications.",
+  "start_url": "/portal",
+  "display": "standalone",
+  "background_color": "#09182F",
+  "theme_color": "#0A1D3D",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}

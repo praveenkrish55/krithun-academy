@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Manrope } from "next/font/google";
 import "./globals.css";
+import { PwaProvider } from "@/components/layout/pwa-provider";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -73,7 +74,7 @@ export default function RootLayout({
       className={`${cormorant.variable} ${manrope.variable} h-full antialiased scroll-smooth`}
     >
       <body className="min-h-full flex flex-col bg-white text-slate-800 font-sans">
-        {children}
+        <PwaProvider>{children}</PwaProvider>
       </body>
     </html>
   );
